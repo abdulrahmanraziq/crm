@@ -18,7 +18,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchCustomers = async () => {
       try {
-        const response = await axios.get('http://localhost:10000/api/customers');
+        const response = await axios.get('https://crm-4-nojq.onrender.com/api/customers');
         setCustomers(response.data);
       } catch (error) {
         setError('Error fetching customers');

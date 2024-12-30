@@ -17,7 +17,7 @@ const AddCustomer = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     // POST or PUT request to add/edit customer
-    const res = await fetch('http://localhost:10000/api/customers', {
+    const res = await fetch('https://crm-4-nojq.onrender.com/api/customers', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),

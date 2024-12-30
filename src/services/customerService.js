@@ -1,5 +1,5 @@
 // src/services/customerService.js
-const API_URL = "http://localhost:10000/api/customers";
+const API_URL = "https://crm-4-nojq.onrender.com/api/customers";
 
 export const getCustomers = async () => {
   const response = await fetch(API_URL);
@@ -16,7 +16,7 @@ export const deleteCustomer = async (id) => {
 
 export const createCustomer = async (customerData) => {
     try {
-      const res = await fetch('http://localhost:10000/api/customers', {
+      const res = await fetch('https://crm-4-nojq.onrender.com/api/customers', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -32,7 +32,7 @@ export const createCustomer = async (customerData) => {
   
   export const updateCustomer = async (id, customerData) => {
     try {
-      const res = await fetch(`http://localhost:10000/api/customers/${id}`, {
+      const res = await fetch(`https://crm-4-nojq.onrender.com/api/customers/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

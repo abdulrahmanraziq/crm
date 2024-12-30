@@ -35,12 +35,12 @@ const Analytics = () => {
 
   useEffect(() => {
     const fetchCustomerAnalytics = async () => {
-      const res = await axios.get('http://localhost:10000/api/analytics/customers');
+      const res = await axios.get('https://crm-4-nojq.onrender.com/api/analytics/customers');
       setCustomerData(res.data);
     };
 
     const fetchFeedbackAnalytics = async () => {
-      const res = await axios.get('http://localhost:10000/api/analytics/feedback');
+      const res = await axios.get('https://crm-4-nojq.onrender.com/api/analytics/feedback');
       setFeedbackData(res.data);
     };
 

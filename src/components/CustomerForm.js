@@ -74,10 +74,10 @@ const handlePurchaseHistoryChange = (e) => {
     e.preventDefault();
     try {
       if (isEditing) {
-        await axios.put(`http://localhost:10000/api/customers/${customer._id}`, customer);
+        await axios.put(`https://crm-4-nojq.onrender.com/api/customers/${customer._id}`, customer);
         alert('Customer updated successfully');
       } else {
-        await axios.post('http://localhost:10000/api/customers', customer);
+        await axios.post('https://crm-4-nojq.onrender.com/api/customers', customer);
         alert('Customer created successfully');
         
         // Clear the form after submission

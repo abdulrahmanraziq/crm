@@ -15,7 +15,7 @@ const Communication = () => {
   useEffect(() => {
     const fetchCustomers = async () => {
       try {
-        const response = await axios.get('http://localhost:10000/api/customers');
+        const response = await axios.get('https://crm-4-nojq.onrender.com/api/customers');
         setCustomers(response.data);
       } catch (error) {
         console.error('Failed to load customers', error);
@@ -31,7 +31,7 @@ const Communication = () => {
     const fetchCommunications = async () => {
       try {
         setLoading(true);
-        const response = await axios.get(`http://localhost:10000/api/customers/${selectedCustomerId}/communications`);
+        const response = await axios.get(`https://crm-4-nojq.onrender.com/api/customers/${selectedCustomerId}/communications`);
         setCommunications(response.data);
       } catch (error) {
         setError('Failed to load communications');
@@ -47,7 +47,7 @@ const Communication = () => {
   // Handle adding a new communication entry
   const handleAddCommunication = async () => {
     try {
-      const response = await axios.post(`http://localhost:10000/api/customers/${selectedCustomerId}/communications`, {
+      const response = await axios.post(`https://crm-4-nojq.onrender.com/api/customers/${selectedCustomerId}/communications`, {
         content: newComm,
       });
       setCommunications([...communications, response.data]); // Append new communication to the list

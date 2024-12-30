@@ -12,7 +12,7 @@ export const AuthContextProvider = ({ children }) => {
   // Login request function
   const loginUser = async (userData) => {
     try {
-      const res = await fetch("http://localhost:10000/api/login", {
+      const res = await fetch("https://crm-4-nojq.onrender.com/api/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -43,7 +43,7 @@ export const AuthContextProvider = ({ children }) => {
   // Register request function
   const registerUser = async (userData) => {
     try {
-      const res = await fetch("http://localhost:10000/api/register", {
+      const res = await fetch("https://crm-4-nojq.onrender.com/api/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

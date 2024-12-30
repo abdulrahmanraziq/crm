@@ -13,7 +13,7 @@ const CustomerManagement = () => {
   useEffect(() => {
     const fetchCustomers = async () => {
       try {
-        const response = await axios.get('http://localhost:10000/api/customers');
+        const response = await axios.get('https://crm-4-nojq.onrender.com/api/customers');
         setCustomers(response.data);
       } catch (error) {
         console.error('Error fetching customers:', error);
@@ -33,7 +33,7 @@ const CustomerManagement = () => {
   const handleDeleteCustomer = async (customerId) => {
     console.log("handleDeleteCustomer called for ID:", customerId); // Log the customer ID
     try {
-      const response = await axios.delete(`http://localhost:10000/api/customers/${customerId}`);
+      const response = await axios.delete(`https://crm-4-nojq.onrender.com/api/customers/${customerId}`);
       
       if (response.status === 200) {
         // Update the customers state to remove the deleted customer
