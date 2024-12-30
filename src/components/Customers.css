@@ -1,0 +1,15 @@
+.customer-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .customer-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .button mt-3 {
+
+    color: red;
+
+  }

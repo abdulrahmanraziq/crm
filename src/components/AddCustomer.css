@@ -1,0 +1,21 @@
+.add-customer-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .add-customer-form div {
+    margin-bottom: 15px;
+  }
+  
+  .add-customer-form label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .add-customer-form input {
+    width: 100%;
+    padding: 7px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+  
